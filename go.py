@@ -3,10 +3,10 @@ from mcpi import block
 
 mc = minecraft.Minecraft.create()
 
-mc.postToChat("Hello Laura")
-x=-119
-y=12
-z=61.4
+mc.postToChat("Bob the builder")
+x=0
+y=0
+z=0
 mc.player.setPos(x,y,z)
 
 x,y,z = mc.player.getPos();
@@ -28,7 +28,7 @@ width=8
 length=15
 height=6
 
-x=-127
+#  x=-127
 
 # build the walls
 mc.setBlocks(x,y,z,x+length,y+height,z,brick)
