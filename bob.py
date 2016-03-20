@@ -6,9 +6,14 @@ from cottage import *
 mc = minecraft.Minecraft.create()
 
 air=block.AIR.id
+stone=block.STONE.id
+
 mc.player.setPos(0,0,0)
 
+
 mc.setBlocks(-127,0,-127,127,50,127,air)
+
+mc.setBlocks(-127,-1,-127,127,-1,127,stone)
 
 mc.postToChat("Bob The Builder")
 x=0

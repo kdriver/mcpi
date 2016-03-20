@@ -4,6 +4,7 @@ def build_cottage(mc):
         x,y,z = mc.player.getPos();
         
         z=z+5
+        
         mc.postToChat("Build a cottage")
         air=block.AIR.id
         stone=block.STONE.id
@@ -22,21 +23,22 @@ def build_cottage(mc):
 
         width=6
         length=8
-        height=2
+        height=5
 
-        #  x=-127
+      
 
         # build the walls
         mc.setBlocks(x,y,z,x+length,y+height,z,oak_plank)
         mc.setBlocks(x,y,z+width,x+length,y+height,z+width,oak_plank)
         mc.setBlocks(x,y,z,x,y+height,z+width,oak_plank)
         mc.setBlocks(x+length,y,z,x+length,y+height,z+width,oak_plank)
+        
 
         # put a floor in
-        mc.setBlocks(x,y+(height),z,x+length,y+(height),z+width,oak_plank)
+        mc.setBlocks(x,y-1,z,x+length,y-1,z+width,oak_plank)
         
         # put a hole in for the ladder
-        mc.setBlocks(x+length-2,y+(height/2),z+width-1,x+length-1,y+(height/2),z+width-1,air)
+        mc.setBlocks(x+length-2,y,z+width-1,x+length-1,y+(height/2),z+width-1,air)
 
         #put the roof on
         mc.setBlocks(x,y+height+1,z,x+length,y+height+1,z+width,wool,yellow_wool)
@@ -59,7 +61,7 @@ def build_cottage(mc):
 
          # put the windows in
         mc.setBlocks(x,y,z+(width/3),x,y+1,z+width-(width/3),glass)
-        
+        return
        
 
 
