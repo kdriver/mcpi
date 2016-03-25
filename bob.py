@@ -11,6 +11,7 @@ stone=block.STONE.id
 
 mc.player.setPos(0,0,0)
 
+ 
 
 mc.setBlocks(-127,0,-127,127,50,127,air)
 
