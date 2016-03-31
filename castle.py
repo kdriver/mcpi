@@ -58,8 +58,8 @@ def build_castle(mc,x,y,z):
         # put a floor in
         mc.setBlocks(x,y-1,z,x+length,y-1,z+width,cobblestone)
 
-        #put the roof on
-        mc.setBlocks(x,y+height+1,z,x+length,y+height+1,z+width,wool,cobblestone)
+        #put the roof on p1,2,3 and 4
+        mc.setBlocks(x,y+height+1,z,x+length,y+height+1,z+4,cobblestone)
 
         # put the door in
         mc.setBlocks(x+(length/2),y,z,x+(length/2),y+1,z,door)
@@ -69,7 +69,7 @@ def build_castle(mc,x,y,z):
         # put a torch downstairs
 ##        mc.setBlock(x+1,y+(height/5)-1,z+width-3,torch)
 
-        # put the turrests on the roof
+        # put the turrets on the roof
 ##        mc.setBlocks(x
 
 
